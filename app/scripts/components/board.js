@@ -1,14 +1,14 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import Column from './column';
 
 export default React.createClass({
   render() {
-    return(
-      <div>
-        <h1>Jeopardy</h1>
-        <button id="restart">Restart Game</button>
-        <div id="point-div"></div>
-      </div>
-    )
+    let allColumns;
+    allColumns = this.props.categories.map((category, i, arr) => {
+      return <Column key={category.title} category={category} />
+    })
+    return (
+        <ul id="columns">{allColumns}</ul>
+    );
   }
 });
