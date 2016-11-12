@@ -24,6 +24,7 @@ export default React.createClass({
     return (
       <div id="gameboard">
         <Board categories={this.state.categories} />
+        {this.props.children}
       </div>
     );
   }

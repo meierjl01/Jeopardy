@@ -13,8 +13,9 @@ import QuestionBox from './components/questionbox';
 
 const router = (
       <Router history={hashHistory}>
-          <Route path="/" component={Gamepage}/>
-          <Route path="/question" component={QuestionBox}/>
+          <Route path="/" component={Gamepage}>
+            <Route path="/questions/:categoryId/:clueId" component={QuestionBox}/>
+          </Route>
       </Router>
 );
 
