@@ -24,8 +24,8 @@ export default React.createClass({
         <h2>Question: {q}</h2>
           <form>
             <input id="answer" type="text" placeholder="Answer"/>
-            <button onSubmit={this.handleSubmit}>Answer</button>
-            <input type="submit" onClick={this.handlePass} value="Pass" />
+            <button onClick={this.handleSubmit}>Answer</button>
+            <a href="#">Pass</a>
           </form>
       </div>
     );
@@ -38,8 +38,5 @@ handleSubmit(e) {
   //   console.log('correct answer');
   //   //
   // } else console.log('incorrect answer');
-},
-handlePass(e) {
-  e.preventDefault();
 },
 });
