@@ -1,9 +1,9 @@
 import Backbone from 'backbone';
 
 export default Backbone.Model.extend({
-  defaults : {
-
-    
+  idAttribute : 'id',
+  markComplete() {
+    // console.log(this.clue.answered === true);
+    this.get('answered') === true;
   }
-
-})
+});

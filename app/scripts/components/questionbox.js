@@ -21,7 +21,7 @@ export default React.createClass({
       console.log(a);
     return(
       <div id="question-box">
-        <h2>Question: {q}</h2>
+        <h2>Question: {q} </h2>
           <form>
             <input id="answer" type="text" placeholder="Answer"/>
             <button onClick={this.handleSubmit}>Answer</button>

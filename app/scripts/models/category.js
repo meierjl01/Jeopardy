@@ -37,12 +37,12 @@ export default Backbone.Model.extend({
     return filtered;
   },
 
-markComplete() {
-  console.log(this.clue.answered === true);
-  console.log(this.clue.get('answered') === true);
-},
-//function to use the clueid to get the quesiton and display it on the page for the user;
-//filter to get the one clue that matches the clueid
+// markComplete() {
+//   console.log(this.clue.answered === true);
+//   console.log(this.clue.get('answered') === true);
+// },
+// //function to use the clueid to get the quesiton and display it on the page for the user;
+// //filter to get the one clue that matches the clueid
 
 //coerce them both into strings!!
 
