@@ -23,6 +23,8 @@ export default React.createClass({
     // window.console.log(this.state);
     return (
       <div id="gameboard">
+        <div id="score">Score: $</div>
+        <div id="answer">Answer: </div>
         <Board categories={this.state.categories} />
         {this.props.children}
       </div>

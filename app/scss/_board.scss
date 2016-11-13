@@ -1,0 +1,64 @@
+body {
+    background: url('http://www.okayplayer.com/wp-content/uploads/2016/07/Jeopardy-690.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1em;
+    
+    #score {
+      background: #150999;
+      border: 0.25em solid black;
+      color: white;
+      font-size: 1.5em;
+      width: 7em;
+      display: inline-block;
+    }
+
+    #answer {
+      background: #150999;
+      border: 0.25em solid black;
+      color: white;
+      font-size: 1.5em;
+      width: 17em;
+      display: inline-block;
+      float: right;
+    }
+
+    #single-category {
+        width: 16%;
+        display: inline-block;
+        text-align: center;
+
+        h2 {
+            color: white;
+            font-size: 1.5em;
+            // margin-left: 1em;
+            background: #150999;
+            padding: 1em;
+            border: 0.25em solid black;
+            height: 1em;
+            width: 90%;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                // text-align: center;
+                a {
+                    display: block;
+                    color: #D7B468;
+                    font-size: 2.5em;
+                    text-decoration: none;
+                    background: #150999;
+                    padding: .5em;
+                    border: 0.25em solid black;
+                    height: .5em;
+                    width: 90%;
+                    margin-top: 0;
+                    // margin-right: .2em;
+                    margin-bottom: 0.1em;
+                }
+            }
+        }
+    }
+}

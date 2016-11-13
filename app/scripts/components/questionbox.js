@@ -1,5 +1,6 @@
 import React from 'react';
 import store from '../store';
+import { Link } from 'react-router';
 
 export default React.createClass({
   getInitialState(){
@@ -23,9 +24,9 @@ export default React.createClass({
       <div id="question-box">
         <h2>Question: {q} </h2>
           <form>
-            <input id="answer" type="text" placeholder="Answer"/>
-            <button onClick={this.handleSubmit}>Answer</button>
-            <a href="#">Pass</a>
+            <input id="answer-input" type="text" placeholder="Answer"/>
+            <Link id="answer-button" to="#" onClick={this.handleSubmit}>Answer</Link>
+            <Link id="pass" to="#">Pass</Link>
           </form>
       </div>
     );

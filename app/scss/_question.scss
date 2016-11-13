@@ -1,0 +1,32 @@
+#question-box {
+    color: white;
+    font-size: 1em;
+    background: #150999;
+    padding: 1em;
+    border: 0.25em solid black;
+    position: absolute;
+    top: 5em;
+    left: 3em;
+    padding: 3em;
+
+    #answer-input {
+        width: 20em;
+        height: 3em;
+        margin-right: 1em;
+    }
+
+    #answer-button {
+        padding: 0.25em;
+        border: 0.15em solid black;
+        color: white;
+        text-decoration: none;
+    }
+
+    #pass {
+        padding: 0.25em;
+        margin-left: 1em;
+        border: 0.15em solid black;
+        color: white;
+        text-decoration: none;
+    }
+}
