@@ -22,7 +22,7 @@ export default React.createClass({
       console.log(a);
     return(
       <div id="question-box">
-        <h2>Question: {q} </h2>
+        <h3>Question: {q} </h3>
           <form>
             <input id="answer-input" type="text" placeholder="Answer"/>
             <Link id="answer-button" to="#" onClick={this.handleSubmit}>Answer</Link>
@@ -33,11 +33,17 @@ export default React.createClass({
   },
 handleSubmit(e) {
   e.preventDefault();
-  console.log('hi');
-  // let userAnswer = document.getElementById('answer').value;
-  // if (userAnswer === a) {
-  //   console.log('correct answer');
-  //   //
-  // } else console.log('incorrect answer');
+  // console.log('hi');
+  let userAnswer = document.getElementById('answer-input').value;
+  // console.log(userAnswer);
+  if (userAnswer === this.state.question.answer) {
+    console.log('correct');
+    alert(`correct!`);
+     window.location = '#';
+  } else {
+    alert(`incorrect`);
+    console.log('incorrect')
+    window.location = '#';
+  }
 },
 });
