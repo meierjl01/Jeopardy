@@ -6,7 +6,8 @@ import Board from './board';
 export default React.createClass({
   getInitialState(){
     return {
-      categories: store.categories.toJSON()
+      categories: store.categories.toJSON(),
+      session: store.session
     };
   },
 
@@ -17,13 +18,18 @@ export default React.createClass({
         categories: store.categories.toJSON()
       });
     });
+    store.session.on('update change', () => {
+      this.setState({
+        session: store.session
+      });
+    });
   },
 
   render() {
-    // window.console.log(this.state);
+    // window.console.log(store.session.attributes.points);
     return (
       <div id="gameboard">
-        <div id="score">Score: $</div>
+        <div id="score">Score: ${store.session.attributes.points}</div>
         <div id="answer">Answer: </div>
         <Board categories={this.state.categories} />
         {this.props.children}

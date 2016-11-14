@@ -1,5 +1,5 @@
 import Backbone from 'backbone';
-import $ 'jquery';
+import $ from 'jquery';
 
 export default Backbone.Model.extend ({
   idAttribute: 'id',
@@ -20,7 +20,4 @@ export default Backbone.Model.extend ({
     //     alert (`Incorrect`);
     //   }
     // },
-    addScore() {
-
-    }
 });

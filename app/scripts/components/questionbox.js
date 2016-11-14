@@ -37,12 +37,14 @@ handleSubmit(e) {
   let userAnswer = document.getElementById('answer-input').value;
   // console.log(userAnswer);
   if (userAnswer === this.state.question.answer) {
-    console.log('correct');
+    // console.log('correct');
+    console.log(store.session);
+    store.session.addScore(this.state.question.value);
     alert(`correct!`);
      window.location = '#';
   } else {
-    alert(`incorrect`);
-    console.log('incorrect')
+    alert(`Incorrect. The answer was ${this.state.quesiton.answer}`);
+    // console.log('incorrect')
     window.location = '#';
   }
 },
